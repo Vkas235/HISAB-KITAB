@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>हीसाब कीताब</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>हीसाब कीताब</h1>
+    <form id="entryForm">
+      <input type="text" id="desc" placeholder="विवरण" required>
+      <input type="number" id="amount" placeholder="राशि" required>
+      <select id="type">
+        <option value="credit">इनकम</option>
+        <option value="debit">खर्च</option>
+      </select>
+      <button type="submit">जोड़ें</button>
+    </form>
+    <h2>मौजूदा बैलेंस: <span id="balance">0</span> ₹</h2>
+    <div class="history">
+      <h3>हिस्ट्री:</h3>
+      <ul id="historyList"></ul>
+    </div>
+    <button id="clearAll">सारा डेटा हटाएं</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
